@@ -22,13 +22,14 @@ public class MainActivity extends AppCompatActivity {
         R.drawable.ball2,
         R.drawable.ball3,
         R.drawable.ball4,
-                R.drawable.ball5
+                R.drawable.ball5,
+                R.drawable.ball3
         };
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Random random=new Random();
-                int n=random.nextInt(4);
+                int n=random.nextInt(5);
                 imageView.setImageResource(choicesArray[n]);
             }
         });
